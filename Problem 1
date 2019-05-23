@@ -1,0 +1,88 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+int choice;
+int x, y, z, sum, dif, prod, quo, mod;
+void addition()
+{
+    cout<<"Give 2 integers you want to add"<<endl;
+    cout<<"Integer 1: "; cin>>x;
+    cout<<"Integer 2: "; cin>>y;
+    sum = x + y;
+    cout<<x<<" + "<<y<<" = "<<sum<<endl;
+}
+
+void subtraction()
+{
+    cout<<"Give 2 integers you want to subtract"<<endl;
+    cout<<"Integer 1: "; cin>>x;
+    cout<<"Integer 2: "; cin>>y;
+    dif = x - y;
+    cout<<x<<" - "<<y<<" = "<<dif<<endl;
+}
+void multiply()
+{
+    cout<<"Give 2 integers you want to multiply"<<endl;
+    cout<<"Integer 1: "; cin>>x;
+    cout<<"Integer 2: "; cin>>y;
+    prod = x * y;
+    cout<<x<<" * "<<y<<" = "<<prod<<endl;
+}
+
+void divide()
+{
+    cout<<"Give 2 integers you want to divide"<<endl;
+    cout<<"Integer 1: "; cin>>x;
+    cout<<"Integer 2: "; cin>>y;
+    quo = x / y;
+    cout<<x<<" / "<<y<<" = "<<quo<<endl;
+}
+
+void modu()
+{
+    cout<<"Give 2 integers you want to use in modulus"<<endl;
+    cout<<"Integer 1: "; cin>>x;
+    cout<<"Integer 2: "; cin>>y;
+    mod = x % y;
+    cout<<x<<" % "<<y<<" = "<<mod<<endl;
+}
+
+
+
+int main()
+{
+    
+    cout<<"Input your operation"<<endl;
+    cout<<"1.Add"<<endl;
+    cout<<"2.Subtract"<<endl;
+    cout<<"3.Multiply"<<endl;
+    cout<<"4.Divide"<<endl;
+    cout<<"5.Modulus"<<endl;
+    cout<<"Your Operation: "; cin>> choice;
+    
+    if(choice == 1)
+    {
+        addition();
+    }
+    else if (choice == 2)
+    {
+        subtraction();
+    }
+    else if (choice == 3)
+    {
+        multiply();
+    }
+    else if (choice == 4)
+    {
+        divide();
+    }
+    else if (choice == 5)
+    {
+        modu();
+    }
+    
+    
+    return 0;
+}
+
