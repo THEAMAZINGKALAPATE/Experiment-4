@@ -1,0 +1,37 @@
+#include<iostream>
+#include<cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int swap = -1;
+    int x, i;
+    int array[i];
+    
+    
+    
+    cout<< "Enter array size: "; cin>>x;
+    cout<<"Enter "<<x<<" values"<<endl;
+    for(int i = 0; i < x; i++)
+    {
+        cin>> array[i];
+    }
+    
+    for(int i = 0; i < x; i++)
+    {
+        if (array[i] > array[i + 1])
+        {
+            swap = array[i + 1];
+            array[i + 1] = array[i];
+            array[i] = swap;
+        }
+    }
+    
+    for(int i = 0; i < x; i++)
+    {
+        cout<< array[i] <<", ";
+    }
+    cout<<endl;
+    
+}
